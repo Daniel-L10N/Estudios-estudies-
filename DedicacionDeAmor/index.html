@@ -3,65 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quieres ser mi novia?</title>
+    
     
 </head>
 <body>
 
-    <div id="container">
-        <h1>Mireya, ¿quieres ser mi novia?</h1>
-        <p>En cada amanecer despierto pensando en ti, en la luz de tus ojos que ilumina mi existir. Quisiera que supieras lo que siento por dentro, que mi corazón late por ti en cada momento.</p>
-
-        <div class="buttons">
-            <button id="yesButton" onclick="accept()">Sí</button>
-            <button id="noButton" onclick="moveNo()">No</button>
-        </div>
-    </div>
-<a>https://mpago.la/2TT3Wv2</a>
-    <div id="celebration" class="celebration" style="display: none;">¡Sabía que aceptarías, princesa! ❤️ <br><br> I Love You</div>
-
-    <script>
-        const noButton = document.getElementById("noButton");
-        const celebration = document.getElementById("celebration");
-        const container = document.getElementById("container");
-
-        function moveNo() {
-            const randomX = Math.floor(Math.random() * (window.innerWidth - noButton.offsetWidth));
-            const randomY = Math.floor(Math.random() * (window.innerHeight - noButton.offsetHeight));
-            noButton.style.position = "absolute";
-            noButton.style.left = randomX + "px";
-            noButton.style.top = randomY + "px";
-        }
-
-        function accept() {
-            // Ocultar contenido inicial
-            container.style.display = "none";
-            // Mostrar el mensaje de celebración
-            celebration.style.display = "block";
-            celebration.style.opacity = 1;
-            
-            // Crear confeti
-            for (let i = 0; i < 50; i++) { // Aumentado a 50 piezas de confeti
-                const confetti = document.createElement("div");
-                confetti.style.position = "absolute";
-                confetti.style.width = "10px";
-                confetti.style.height = "20px";
-                confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-                confetti.style.top = `${Math.random() * window.innerHeight}px`;
-                confetti.style.left = `${Math.random() * window.innerWidth}px`;
-                confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
-                confetti.style.transition = "transform 1s ease-out, opacity 1s ease-out";
-                document.body.appendChild(confetti);
-
-                setTimeout(() => {
-                    confetti.style.transform += " translateY(100vh)";
-                    confetti.style.opacity = 0;
-                }, 100);
-
-                setTimeout(() => confetti.remove(), 2000);
-            }
-        }
-    </script>
-
+ <p>Paga 5pesos</p>
+<a href= "https://mpago.la/2TT3Wv2">paga 5$</a>
 </body>
 </html>
